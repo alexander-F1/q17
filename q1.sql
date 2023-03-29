@@ -1,0 +1,22 @@
+CREATE TABLE Concerts (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  duration INTERVAL NOT NULL,
+  description VARCHAR(200) NULL,
+  address VARCHAR(100) NOT NULL,
+  age_limit INT NOT NULL,
+  price DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE Visitors (
+  id SERIAL PRIMARY KEY,
+  email VARCHAR(100) NOT NULL,
+  name VARCHAR(50) NOT NULL,
+  age INT NOT NULL
+);
+
+CREATE TABLE Categories (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  description VARCHAR(200) NULL
+);

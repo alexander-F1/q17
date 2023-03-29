@@ -1,0 +1,4 @@
+SELECT *
+FROM videos
+ORDER BY likes DESC
+LIMIT 5;
